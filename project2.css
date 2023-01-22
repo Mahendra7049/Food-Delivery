@@ -1,0 +1,256 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* for navbar */
+.navigation {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+
+
+}
+
+.navigation::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+
+/* list and logo */
+#logo {
+    margin: 12px;
+
+}
+
+#logo img {
+    height: 40px;
+    width: 40px;
+}
+
+ul {
+    display: flex;
+
+}
+
+.item {
+    list-style: none;
+    margin: 2px;
+    font-size: 1.3rem;
+    /* border: 2px solid;
+    border-radius: 10px; */
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.navigation ul li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+}
+
+/* for home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: " ";
+    background: url(/imgages/salad-2068220__340.jpg) no-repeat center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#home h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+#home p {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+/* services section */
+.services-container {
+    margin: 25px;
+}
+
+#our-services {
+    font-size: 40px;
+    font-family: cursive;
+}
+
+#services {
+    margin: 50px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    transition: all 1s ease-in-out;
+} 
+.box:hover{
+    
+    transform: rotate(4deg);
+    
+}
+
+
+
+
+#services.box img {
+    height: 100px;
+    margin: auto;
+    align-items: center;
+    display: block;
+}
+
+.box {
+    margin: 5px;
+    padding: 34px;
+    border-radius: 23px;
+    background-color: rgb(255, 247, 240);
+}
+
+/* our client */
+.client-section {
+    font-family: cursive;
+    height: 344px;
+    margin: 0px;
+    top: 0px;
+}
+
+#client img {
+    height: 130px;
+    padding: 25px;
+    margin-left: 50px;
+
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.client-section::before {
+    content: " ";
+    position: absolute;
+    background: url(/imgages/smoothies-3176371__340.webp) no-repeat center/cover;
+    width: 100%;
+    height: 47%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* contact us */
+.contact-section::before {
+    content: " ";
+    position: absolute;
+    background: url(/imgages/istockphoto-1312566254-170667a.jpg) center center/cover;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.contact-section{
+    
+    justify-content: center;
+    align-items: center;
+}
+.box-con form{
+    width: 40%;
+    padding: 5px;
+
+}
+.box-con label{
+    font-size: 1.3rem;
+    font-family: cursive;
+}
+
+
+
+.box-con{
+    display:flex ;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.box-con input{
+    display: flex;
+    border: 2px solid;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#contactus{
+    font-family: cursive;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: 9px 20px;
+
+}
+
+/* utility classes */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+#btn {
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: brown;
+    font-size: 1.5rem;
+    margin: 25px;
+    cursor: pointer;
+    background-color: brown;
+   transition: all 1s ease-in-out;
+} 
+#btn:hover{
+    background-color: aqua;
+    transform: rotate(360deg);
+    transform: scale(1.2);
+}
+    
+
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}
